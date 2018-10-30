@@ -1,0 +1,5 @@
+include $(PLATFORM_ROOT_DIR)/apros/Makefile.apros
+
+CONTIKI_TARGET_DIRS += apros/ads127l01
+
+BOARD_SOURCEFILES += ads127l01-board-spi.c ads127l01-sensor.c ads127l01-spi-control.c 

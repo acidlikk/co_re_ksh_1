@@ -1,0 +1,10 @@
+CFLAGS += -DBOARD_SMARTRF06EB=1
+
+CONTIKI_TARGET_DIRS += apros common
+
+BOARD_SOURCEFILES += board-spi.c
+BOARD_SOURCEFILES += apros-packet-control.c apros-serial-line.c sensor-common.c apros-gpio-control.c 
+BOARD_SOURCEFILES += apros-wireless-line.c apros-command-scheduler.c apros-flash-control.c  ext-flash.c
+
+### Signal that we can be programmed with cc2538-bsl
+BOARD_SUPPORTS_BSL=1

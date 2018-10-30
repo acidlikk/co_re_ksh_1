@@ -1,0 +1,12 @@
+### Will allow the inclusion of the correct CPU makefile
+CPU_FAMILY = cc13xx
+
+### Include the common sensortag makefile
+include $(PLATFORM_ROOT_DIR)/apros/ads127l01/Makefile.ads127l01
+
+BOARD_SOURCEFILES += m41t64.c 
+BOARD_SOURCEFILES += apros-sensors.c 
+BOARD_SOURCEFILES += board.c board-i2c.c sensor-common.c leds-arch.c null-sensor.c
+
+### Add to the source dirs
+CONTIKI_TARGET_DIRS += apros/ads127l01/vs1000_lp

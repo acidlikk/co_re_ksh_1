@@ -1,0 +1,11 @@
+### Will allow the inclusion of the correct CPU makefile
+CPU_FAMILY = cc13xx
+
+### Include the common sensortag makefile
+include $(PLATFORM_ROOT_DIR)/apros/Makefile.apros
+
+BOARD_SOURCEFILES += leds-arch.c board.c board-i2c.c hdc-1010-sensor.c opt-3001-sensor.c apros-sensors.c battery_adc_read.c 
+BOARD_SOURCEFILES += ekmc-1603113-sensor.c #ira-s410st01-sensor.c
+
+### Add to the source dirs
+CONTIKI_TARGET_DIRS += apros/hdc1010_opt3001

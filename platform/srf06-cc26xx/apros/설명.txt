@@ -1,0 +1,25 @@
+#폴더 설명
+
+adis16223 : 초기 개발한 디지털 3축 센서. 정육면체 모양의 센서. 현재 사용하지 않음.
+ads127l01 : adxl1002와 vs10xx 계열 센서를 사용한 모델. adc가 동일하므로 플랫폼 명으로 ads127l01을 사용함.
+adxl355 : WiFi용 3축 가속도 센서.
+cc1310 : 기본 플랫폼.
+cc1310_usb : 단일 usb 형태의 보드 사용 시의 플랫폼.
+cc1310_usb_multi : 한 보드에 4개의 베이스를 꽂는 형태의 보드 사용 시의 플랫폼.
+t200 : IITP로 엔키아에 납품한 모델. CO2 센서 t200 사용
+t200_base : t200 플랫폼에서 사용하는 전원 하단 보드를 사용할 경우, 해당 제품을 베이스(수신부)로 활용할 수 있도록 설계한 플랫폼. 
+
+#파일 설명
+
+apros-command-scheduler : 최대 15개의 ctimer 풀을 가지고 여러 개의 ctimer 호출 시 있을 시에도 예약 소실 없이 실행될 수 있도록 하는 모듈.
+장비가 베이스 타입인 경우에는 메시지의 type 검증에도 사용한다.
+
+apros-flash-control : 외부 메모리에 읽고 쓰기 기능을 지원하는 모듈. cc13xx/26xx launchpad 계열에 내장된 외부 메모리 호환. 
+
+apros-gpio-control : output 선언된 gpio에 대해 set/clear 가능하도록 하는 모듈.(큰 기능없음)
+
+apros-packet-control : 사용하는 블럭(TLV)포맷을 정의하고, 시리얼 또는 무선으로 수신한 프레임을 검증함. 
+
+apros-serial-line : 시리얼 통신 모듈
+
+apros-wireless-line : Lime 사용 무선 모듈
